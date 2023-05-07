@@ -293,7 +293,7 @@
   
   .copyright {
     margin-top: 18px;
-  }
+  }t
   
   ion-icon {
     visibility: visible;
@@ -305,3 +305,6 @@
     color: black;
   }
   
+  .salvarIcone {
+    color: black;
+  }

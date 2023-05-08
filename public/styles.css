@@ -305,9 +305,7 @@ body {
   margin-top: 18px;
 }
 
-t ion-icon {
-  visibility: visible;
-}
+
 
 .usuario ion-icon {
   margin-left: 5px;
@@ -315,16 +313,6 @@ t ion-icon {
   color: black;
 }
 
-.branco {
-  
-}
-
-.pretoSalvar{
-  background-image: url("https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/bookmark.svg");
-  width: 24px; /* largura do ícone */
-  height: 28px; /* altura do ícone */
-  color: black;
-}
 
 .preto {
   color: black;
@@ -335,11 +323,3 @@ t ion-icon {
   
 }
 
-.heart-icon::before {
-  content: "";
-  display: inline-block;
-  background-image: url("https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/heart.svg");
-  background-color: red; /* define a cor de fundo para vermelho */
-  width: 24px; /* largura do ícone */
-  height: 24px; /* altura do ícone */
-}

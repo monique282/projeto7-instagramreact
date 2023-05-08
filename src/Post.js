@@ -3,16 +3,16 @@ import React, { useState } from "react";
 export default function Post() {
 
 
-    let elementosPost = '';
-    let [postSalvar, setPostAtualizado] = useState('preto');
+   
+    let [postSalvar, setPostAtualizado] = useState('');
     let [curtida, setCurtir] = useState('branco');
 
     function salvarPost() {
-        alert('passei aqui');
-        if (postSalvar === 'preto') {
-            setPostAtualizado('preto-colorido');
+        
+        if (postSalvar === '') {
+            setPostAtualizado('pretoSalvar');
         } else {
-            setPostAtualizado('preto');
+            setPostAtualizado('');
         }
     }
 
@@ -38,7 +38,7 @@ export default function Post() {
     ];
 
     return (
-        elementosPost = post.map(post =>
+         post.map(post =>
     (<div class="post" data-test="post">
         <div class="topo">
             <div class="usuario">

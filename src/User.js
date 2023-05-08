@@ -3,19 +3,19 @@ import React, { useState } from 'react';
 export default function User() {
 
 
-    const [nome, setNome] = useState('catanacomics');
-    const [imagem, setImgem] = useState("./assets/img/catanacomics.svg");
+    let [nome, setNome] = useState('catanacomics');
+    let [imagem, setImagem] = useState("./assets/img/catanacomics.svg");
 
     function trocarImagem() {
-        const fotoAtualizada = prompt("qual o link da imagem desejada?");
+        let fotoAtualizada = prompt("qual o link da imagem desejada?");
         if (fotoAtualizada) {
-            setImgem(fotoAtualizada);
+            setImagem(fotoAtualizada);
         }
     }
 
 
 function trocarNome() {
-    const nomeAtualizado = prompt('Qual é o seu nome?');
+    let nomeAtualizado = prompt('Qual é o seu nome?');
     if (nomeAtualizado) {
         setNome(nomeAtualizado);
     }
@@ -24,11 +24,11 @@ function trocarNome() {
 
 return (
     <div class="usuario">
-        <img src={imagem} alt="imagem de perfil" onClick={trocarImagem} />
+        <img src={imagem} alt="imagem de perfil" onClick={trocarImagem} data-test="profile-image"/>
         <div class="texto">
             <span>
-                <strong>{nome}</strong>
-                <ion-icon name="pencil" onClick={trocarNome}></ion-icon>
+                <strong> data-test="name" {nome}</strong>
+                <ion-icon name="pencil" onClick={trocarNome} data-test="edit-name" ></ion-icon>
             </span>
         </div>
     </div>

@@ -27,7 +27,7 @@ return (
         <img src={imagem} alt="imagem de perfil" onClick={trocarImagem} data-test="profile-image"/>
         <div class="texto">
             <span>
-                <strong> data-test="name" {nome}</strong>
+                <strong data-test="name" >  {nome}</strong>
                 <ion-icon name="pencil" onClick={trocarNome} data-test="edit-name" ></ion-icon>
             </span>
         </div>
